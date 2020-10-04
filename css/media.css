@@ -100,7 +100,7 @@
   } 
 
   .slider__title {
-    max-width: 600px !important;
+    max-width: 680px !important;
     width: 100%;
     font-size: 130% !important; 
     text-align: center;
@@ -260,6 +260,7 @@
   .latest-news,
   .popular-news {
     font-size: 150%;
+    font-weight: 500;
   }
 
   .latest-news {
@@ -268,19 +269,19 @@
   }
 
   .popular-news {
-    margin-top: 221px;
+    margin-top: 366px;
   }
 
 /* Заголовки разделов публикаций для страниц с разделами сайта */
   .about-range {
     font-size: 150%;
     margin-top: 0px;
+    font-weight: 500;
   }
-
 
   /* begin: Слайдер со свежими новостями */
   .slick-prev {
-     top: 390px;
+     top: 543px;
      padding-left: auto;
      float: left;
      background-color: #ffffff;
@@ -290,7 +291,7 @@
   }
 
   .slick-arrow {
-    top: 390px;
+    top: 543px;
     padding-right: auto;
     background-color: #ffffff;
     height: 100px;
@@ -300,7 +301,7 @@
 
   .container__slider {
     width: 100%;
-    height: 370px;
+    height: 500px;
   }
 
   .slider__image-author {
@@ -313,21 +314,21 @@
   }
 
   .slider__title {
-    max-width: 800px;
+    max-width: 950px;
     width: 100%;
-    font-size: 150%;
+    font-size: 250%;
   }
 
   .slider__date {
-    font-size: 150%;
+    font-size: 200%;
   }
 
   .slider__author-name {
-     font-size: 150%;
+     font-size: 200%;
   }
 
   .slider__author-profession {
-      font-size: 110%;
+      font-size: 150%;
 
   }
 /* end: Слайдер со свежими новостями */
@@ -363,7 +364,7 @@
   margin-left: auto;
   margin-right: auto; 
   margin-bottom: 0px;
-  height: 250px;
+  height: 350px;
 }
 
 .news-top-left__date, /* Блоки новостей главной страницы сайта ... */
@@ -385,7 +386,7 @@
 .publication-center__author,
 .publication-right__author
  {
-  font-size: 150%;
+  font-size: 200%;
 }
 
 .news-top-left__title, /* Блоки новостей главной страницы сайта ... */
@@ -398,7 +399,7 @@
 .publication-center__title,
 .publication-right__title /* ...Блоки публикаций страниц с разделами сайта */
 { 
-  font-size: 150%;
+  font-size: 250%;
   line-height: 1.2;
 }
 
@@ -456,12 +457,6 @@
     margin-top: 0px;
   }
 
-  .publication p,
-  .publication a,
-  .footer__publication p,
-  .footer__publication a {
-     font-size: 16px;
-  }
 
   .header__publication__author-name {
     text-align: left;
@@ -480,7 +475,8 @@
 
   .main-publication p,
   .main-publication a,
-  .footer-publication p {
+  .footer-publication p,
+  .footer__publication a {
     font-size: 16px;
   }
 
@@ -526,6 +522,10 @@
     padding-left: 0px;
     width: 60px;
     height: 60px;
+  }
+
+  .copy-text {
+    font-size: 16px;
   }
 
 /* Иконки валидации сайта */

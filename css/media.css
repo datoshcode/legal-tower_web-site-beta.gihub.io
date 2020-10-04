@@ -4,10 +4,6 @@
     padding-right: 137px;
 }  
 
-.slider__icon {
-  margin-right: 200px;
-}
-
 .header__photo-author {
     text-align: center;
     margin-right: auto;
@@ -69,6 +65,10 @@
   .slider__author-profession {
     padding-left: 20px;
   }
+  
+  .slider__icon {
+  margin-right: 200px;
+}
 }
 /* ============================== end: Экран до 550px ============================= */
 

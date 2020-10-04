@@ -52,7 +52,11 @@
   .slider__author-name,
   .slider__author-profession {
     padding-left: 20px;
-
+  }
+  
+  .main-publication,
+  .footer__publication {
+    font-size: 16px;
   }
 }
 /* ============================== end: Экран до 550px ============================= */

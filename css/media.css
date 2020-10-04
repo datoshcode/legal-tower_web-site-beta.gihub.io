@@ -247,7 +247,8 @@
 /* Заголовки разделов публикаций для страниц с разделами сайта */
   .about-range {
     font-size: 200%;
-    margin-top: 30px;
+    margin-top: 0px;
+    padding-top: 30px;
     font-weight: 500;
   }
 

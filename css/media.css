@@ -5,10 +5,6 @@
     padding-left: 10px;
    }  
 
-.slider__icon {
-  margin-right: 150px;
-  }
-
 .header__photo-author {
     text-align: center;
     margin-right: auto;
@@ -287,6 +283,10 @@
   .slider__image-author img {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+  }
+  
+  .slider__icon {
+  margin-right: 200px;
   }
 
   .slider__title {

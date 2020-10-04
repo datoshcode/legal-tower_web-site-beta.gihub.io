@@ -1,0 +1,723 @@
+/* ======== Адаптив сайта под разную ширину экрана мобильных телефонов ============ */
+@media (max-width: 500px) {
+  .slider__title {
+    padding-right: 137px;
+}  
+
+.slider__icon {
+  margin-right: 150px;
+}
+}
+
+/* ============================== begin: Экран до 550px =========================== */
+@media (max-width: 550px) {
+
+  .main__content {
+    margin-top: 70px;
+  }
+
+  .menu-main {
+    padding-top: 0;
+  }
+
+  .menu-main li {
+    display: block;
+    background-color: #205c92;
+    border: 1px solid #ffffff;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0px 2px 1px 0px rgba(65, 65, 65, 0.5);
+  }
+
+  .menu-main li:after {
+    content: none;
+  }
+
+  .menu-main a {
+    padding: 25px 0 20px;
+    margin: 0 30px;
+  }
+
+
+  .search-form {
+    width: 100% !important;
+    height: 0;
+  }
+
+  .slider__image-author img {
+    display: none;
+  }
+
+  .slider__date,
+  .slider__author-name,
+  .slider__author-profession {
+    padding-left: 20px;
+
+  }
+}
+/* ============================== end: Экран до 550px ============================= */
+
+/* ============================== begin: Экран до 680px =========================== */
+@media (max-width: 680px) {
+
+  .publication-author-name,
+  .publication-author-profession {
+    font-size: 100%;
+    text-align: left;
+  }
+
+  .header-legislation-news a {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .photo-author {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+  }
+
+  figure {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .publication-date,
+  .publication-author-name,
+  .publication-author-profession
+   {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .publication-icon img,
+  .publication-icon {
+    display: none;
+  } 
+
+  .slider__title {
+    max-width: 600px !important;
+    width: 100%;
+    font-size: 120% !important; 
+    text-align: center;
+  }
+}
+/* ============================== end: Экран до 680px ============================= */
+
+/* ============================== begin: Экран до 995px =========================== */
+@media (max-width: 995px) {
+  
+  .header__logo img {
+    width: 220px;
+    height: 96px;
+  }
+
+  .header__container {
+    height: 98px;
+  }
+
+  /* Кнопка Меню для мобильной версии */
+  .header__btn-menu {
+   display: block;
+   float: right;
+   padding-right: 50px;
+   padding-top: 20px;
+   font-size: 50px;
+  }
+
+  .top-menu {
+    margin-top: 40px;
+  }
+  
+  .top-menu ul {
+    display: none;
+  }
+
+  /* Панель элементов Меню для мобильной версии на которой расположеные элементы */
+  .menu-panel {
+    margin-top: 700px;
+  }
+
+  /*--begin Форма поиска */
+  form {
+    top: -34px;
+    width: 42%;
+  }
+
+  input.search-form__input {
+    background: #ffffff;
+    height: 90px;
+    font-size: 50px;
+  }
+
+  button.search-form__button {
+    height: 90px;
+    width: 80px;
+    border-radius: 25%;
+  }
+
+  button:before {
+    font-size: 35px;
+  }
+
+.search-form__content {
+    margin-top: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
+   }
+
+   .search-form {
+    width: 100%;
+    height: 0;
+  }
+  
+  /*--end Форма поиска */
+
+  /*--begin Главное навигационное меню */
+  .main__container {
+    margin-top: 100px;
+  }
+  
+  .menu-main a {
+    font-size: 250%;
+    width: 700;
+  }
+
+  .menu-main li {
+    display: block;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 85%;
+    left: 0px;
+    right: 0px;
+  }
+
+  .header-logo {
+    width: 167px;
+    height: 77px;
+  }
+
+  .header-logo img {
+    width: 161px;
+    height: 70px;
+  }
+
+  .header-container {
+    width: 100%;
+    height: 650px;
+  }
+
+/*-- begin: Главное навигационное меню */
+.menu-main__home {
+   margin-top: 224px;
+ }
+
+ .menu-main__consultation {
+   margin-top: 331px;
+ }
+
+.menu-main__legislation-news {
+   margin-top: 437px;
+ }
+
+.menu-main__court-decisions {
+   margin-top: 543px;
+ }
+
+  .menu-main__about {
+    margin-top: 650px;
+  }
+
+  .menu-main__home,
+  .menu-main__consultation,
+  .menu-main__legislation-news,
+  .menu-main__court-decisions,
+  .menu-main__about {
+    border-radius: 8px;
+    padding-top: 0px;
+  }
+
+  .menu-main__home:hover:before,
+  .menu-main__consultation:hover:before,
+  .menu-main__legislation-news:hover:before,
+  .menu-main__court-decisions:hover:before,
+  .menu-main__about:hover:before {
+    content: none;
+  }
+  /*-- end: Главное навигационное меню */
+
+  /* Заголовки главной страницы "ОСТАННІ НОВИНИ"  и "ПОПУЛЯРНІ ПУБЛІКАЦІЇ" */
+  .latest-news,
+  .popular-news {
+    font-size: 130%;
+  }
+
+  .latest-news {
+    margin-top: 0px;
+    padding-top: 3px;
+  }
+
+  .popular-news {
+    margin-top: 173px;
+  }
+
+/* Заголовки разделов публикаций для страниц с разделами сайта */
+  .about-range {
+    font-size: 130%;
+    margin-top: 0px;
+  }
+
+
+  /* begin: Слайдер со свежими новостями */
+  .slick-prev {
+     top: 390px;
+     padding-left: auto;
+     float: left;
+     background-color: #ffffff;
+     height: 60px;
+     width: 60px;
+     box-shadow: 0px 1px 2px 0px rgba(65, 65, 65, 0.5);
+  }
+
+  .slick-arrow {
+    top: 390px;
+    padding-right: auto;
+    background-color: #ffffff;
+    height: 60px;
+    width: 60px;
+    box-shadow: 0px 1px 2px 0px rgba(65, 65, 65, 0.5);
+  }
+
+  .container__slider {
+    width: 100%;
+    height: 370px;
+  }
+
+  .slider__image-author {
+    padding-left: 5px;
+  }
+
+  .slider__image-author img {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .slider__title {
+    max-width: 700px;
+    width: 100%;
+    font-size: 130%;
+  }
+/* end: Слайдер со свежими новостями */
+
+/* begin: Блоки с популярными публикациями */
+.news {
+  top: 14px;
+}
+
+.container__news-top,
+.container__news-bottom, /* Контейнер для главной страницы сайта */
+.container__publications /* Контейнер для публикаций страниц с разделами сайта */
+{
+  display: block;
+}
+
+.container__news-bottom {
+  margin-top: 0px;
+}
+
+.news-top-left, /* Блоки новостей главной страницы сайта... */
+.news-top-center,
+.news-top-right,
+.news-bottom-left,
+.news-bottom-center,
+.news-bottom-right, /* ... Блоки новостей главной страницы сайта */
+.publication-left, /* Блоки публикаций страниц с разделами сайта... */
+.publication-center,
+.publication-right /* ...Блоки публикаций страниц с разделами сайта */
+{
+  max-width: 995px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; 
+  margin-bottom: 0px;
+}
+
+.news-top-left__title, /* Блоки новостей главной страницы сайта ... */
+.news-top-center__title,
+.news-top-right__title,
+.news-bottom-left__title,
+.news-bottom-center__title,
+.news-bottom-right__title, /* ... Блоки новостей главной страницы сайта */
+.publication-left__title, /* Блоки публикаций страниц с разделами сайта... */
+.publication-center__title,
+.publication-right__title /* ...Блоки публикаций страниц с разделами сайта */
+{ 
+  font-size: 120%;
+}
+
+.news-top-left__icon, /* Блоки новостей главной страницы сайта ... */
+.news-top-center__icon,
+.news-top-right__icon,
+.news-bottom-left__icon,
+.news-bottom-center__icon,
+.news-bottom-right__icon,
+.news-top-left__icon img,
+.news-top-center__icon img,
+.news-top-right__icon img,
+.news-bottom-left__icon img,
+.news-bottom-center__icon img,
+.news-bottom-right__icon img, /* ... Блоки новостей главной страницы сайта */
+.publication-left__icon,
+.publication-center__icon,
+.publication-right__icon,
+.publication-left__icon img, /* Блоки публикаций страниц с разделами сайта... */
+.publication-center__icon img,
+.publication-right__icon img /* ...Блоки публикаций страниц с разделами сайта */
+{
+  width: 50px;
+  height: 50px;
+}
+
+.news-top-left__icon:hover, /* Блоки новостей главной страницы сайта ... */
+.news-top-center__icon:hover,
+.news-top-right__icon:hover,
+.news-bottom-left__icon:hover,
+.news-bottom-center__icon:hover,
+.news-bottom-right__icon:hover, /* ...Блоки новостей главной страницы сайта */
+.publication-left__icon:hover, /* Блоки публикаций страниц с разделами сайта... */
+.publication-center__icon:hover,
+.publication-right__icon:hover /* ...Блоки публикаций страниц с разделами сайта */
+{
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+}
+
+/* Контейнер для блока публикаций страниц с разделами */
+.container__publications {
+  margin-bottom: 50px;
+  margin-top: -26px;
+}
+/* end: Блоки с популярными публикациями */
+
+/* begin: Публикации */
+  .main-container {
+    top: 86px;
+  }
+  
+  .publication {
+    margin-top: 0px;
+  }
+
+  .header__publication__author-name {
+    text-align: left;
+  }
+
+  .publication-author-profession {
+    padding-top: 20px;
+  }
+
+  .main-publication h1 {
+    font-size: 160%;
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  .main-publication p,
+  .main-publication a,
+  .footer-publication p {
+    font-size: 16px;
+  }
+
+  .photo-author img {
+    width: 100%;
+    height: 100%;
+  }
+/* end: Публикации */
+
+/* Подвал веб-сайта */
+  footer {
+    height: 200px;
+    max-width: 100%;
+  }
+
+  .footer__container {
+    display: block;
+    align-content: center;
+  }
+
+  .contacts__container {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 230px;
+    padding: 10px 0px 0px 6px;
+  }
+
+  .contacts__email:before,
+  .contacts__telegram:before,
+  .contacts__facebook:before {
+    font-size: 35px;
+  }
+
+  .contacts__email,
+  .contacts__telegram,
+  .contacts__facebook {
+    padding-left: 0px;
+    width: 60px;
+    height: 60px;
+  }
+
+/* Иконки валидации сайта */
+  .valid-icon {
+    top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
+    float: none;
+  }
+
+/* Раздел с авторским правом */
+  .copy-text {
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    position: static;
+    margin-top: 30px;
+  }
+
+/* Кнопка ВВЕРХ */
+  #toTop {
+    width: 30%;
+    height: 30%;
+    background-size: 150px 150px;
+  }
+}
+
+/* ============================== end: Экран до 995px =========================== */
+
+
+
+
+
+
+
+@media (max-width: 1156px){
+  .services__items{
+    display: block;
+  }
+  .services__item{
+    max-width: 80%;
+    min-height: 330px;
+    margin: 30px auto;
+  }
+  .form__inner{
+    background-image: none;
+  }
+  .news__inner{
+    display: block;
+  }
+  .news__slider{
+    max-width: 100%;
+    margin-bottom: 90px;
+  }
+  .news__blog{
+    max-width: 100%;
+    display: block;
+    margin-bottom: 30px;
+  }
+  .news__blog:after{
+    content: "";
+    clear: both;
+    display: block;
+  }
+  .news__images{
+    float: left;
+    margin-right: 50px;
+  }
+  .news{
+    padding-bottom: 60px;
+  }
+  .footer__info{
+    max-width: 465px;
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 1050px){
+  .footer__inner{
+    display: block;
+  }
+  .footer__map{
+    max-width: 100%;
+  }
+}
+
+  .services__top,
+  .news__top{
+    display: block;
+  }
+  .services__title-box,
+  .form__title-box,
+  .news__title-box{
+    padding-left: 0;
+    text-align: center;
+    margin: 0 auto 30px;
+  }
+  .services__title-box:before,
+  .form__title-box:before,
+  .news__title-box:before{
+    display: none;
+  }
+  .services__btn,
+  .news__btn{
+    text-align: center;
+  }
+  .form__box-inner{
+    display: block;
+  }
+  .form__box-left{
+    max-width: 100%;
+  }
+  .form__box-right{
+    max-width: 100%;
+  }
+  .form__box-inner .jq-selectbox__select{
+    margin-bottom: 10px;
+  }
+  .form{
+    padding-bottom: 25px;
+  }
+  .advantages__inner{
+    display: block;
+  }
+  .advantages-item{
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 700px){
+  .header__btn{
+    float: none;
+  }
+  .header__contacts{
+    text-align: center;
+  }
+  .header__btn:before{
+    display: none;
+  }
+  .footer__info .header__btn:before{
+    display: block;
+  }
+  .header__btn-menu{
+    display: block;
+  }
+  .menu ul{
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: 20px;
+    z-index: 50;
+  }
+  .menu li{
+    display: block;
+    text-align: center;
+  }
+  .menu a{
+    display: block;
+    background-color: #ffc222;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+  }
+  .menu li + li{
+    padding-left: 0;
+  }
+}
+@media (max-width: 600px){
+  .services__item{
+    max-width: 100%;
+    min-height: 375px;
+    margin: 30px auto;
+  }
+}
+
+@media (max-width: 550px) {
+  .menu_main {
+    padding-top: 0;
+  }
+
+  .menu__main li {
+    display: block;
+    background-color: #205c92;
+    border: 1px solid #ffffff;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0px 2px 1px 0px rgba(65, 65, 65, 0.5);
+  }
+
+  .menu__main li:after {
+    content: none;
+  }
+
+  .menu__main a {
+    padding: 25px 0 20px;
+    margin: 0 30px;
+  }
+}
+
+@media (max-width: 540px){
+  .news__slider{
+    padding: 50px 15px 25px 25px;
+  }
+  .news__slider:before{
+    left: 25px;
+  }
+  .news__slider-inner .slick-next{
+    right: -20px;
+  }
+  .news__slider-inner .slick-prev{
+    right: 35px;
+  }
+  .news__images{
+    float: none;
+  }
+  .news__slider-inner .slick-btn{
+    bottom: -90px;
+  }
+}
+@media (max-width: 414px){
+  .slider__title{
+    font-size: 24px;
+  }
+  .slider__text{
+    font-size: 16px;
+  }
+}
+@media (max-width: 400px){
+  .header__btn:before{
+    display: block;
+  }
+  .advantages-item{
+    padding: 0;
+  }
+}
+@media (max-width: 375px){
+  .header__email{
+    padding-right: 30px;
+  }
+}
+
+
+
+@media (min-width: 700px){
+  .menu ul{
+    display: block !important;
+  }
+}

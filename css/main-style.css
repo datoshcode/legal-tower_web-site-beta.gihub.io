@@ -1,0 +1,813 @@
+/* =================== Главные стили для веб-сайта ================================= */
+
+/* begin: Глобальные инструкции для стилей всего сайта ============================= */
+* {
+  box-sizing: border-box;
+}
+
+header {
+  font-family: "Roboto", Arial, Verdana, Tahoma, sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  font-family: "PT Serif", Georgia, "Times New Roman", Times, serif;
+}
+
+/* Характеристики ссылок */
+a {
+  color: #205c92;
+  text-decoration: none;
+  /* Удаляем подчеркивание ссылок */
+  display: inline-block;
+  /* Блочное отображение ссылок */
+}
+
+a:visited {
+  color: #800080;
+  /* Цвет посещённой ссылки */
+}
+
+a:hover {
+  color: #800000;
+  /* Цвет ссылки при наведении на нее курсора мыши */
+  text-decoration: none;
+  /* Добавляем подчеркивание */
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0px;
+}
+/* end: Глобальные атрибуты =============================================== */
+
+/* begin: Шапка веб-сайта ================================================= */
+/* Основные характеристики контейнеров с вложенностью */
+.header__container,
+.container__slider {
+  position: relative;
+  max-width: 1170px;
+  height: 71px;
+  top: -40px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0px 1px 2px 0px rgba(65, 65, 65, 0.5);
+}
+
+/* Характеристики логотипа-банера шапки */
+.header__logo {
+  position: absolute;
+  height: 80px;
+  width: 60px;
+  top: 0px;
+  left: 10px;
+  background-color: #205c92;
+  border: 1px solid #ffffff;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0px 2px 1px 0px rgba(65, 65, 65, 0.5);
+}
+
+.main__container {
+  max-width: 1110px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Кнопка Меню для мобильной версии */
+.header__btn-menu {
+ display: none;
+}
+
+.menu-panel {
+  display: none;
+}
+
+/* begin: Главное меню веб-сайта ========================================== */
+.menu-main {
+  list-style: none;
+  margin: 40px 0 5px;
+  padding: 25px 0 5px;
+  padding-right: 38px;
+  text-align: center;
+  background: #ffffff;
+}
+
+.menu-main li {
+  display: inline-block;
+  background-color: #205c92;
+  border: 1px solid #ffffff;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0px 2px 1px 0px rgba(65, 65, 65, 0.5);
+}
+
+.menu-main li:after {
+  content: "";
+  color: #606060;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.menu-main li:last-child:after {
+  content: none;
+}
+
+.menu-main a {
+  text-decoration: none;
+  letter-spacing: 1px;
+  position: relative;
+  padding-bottom: 1px;
+  padding-top: 10px;
+  margin: 0 5px 0 5px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color 0.2s;
+  outline: none;
+}
+
+.menu-main a,
+.menu-main a:visited {
+  color: #9d999d;
+}
+
+.menu-main a.current,
+.menu-main a:hover {
+  color: #ffffff;
+}
+
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #ffffff;
+  transition: 0.2s;
+}
+
+.menu-main a:hover:before,
+.menu-main .current:before {
+  left: 0;
+}
+
+.menu-main a:hover:after,
+.menu-main .current:after {
+  right: 0;
+}
+
+/*-- begin: Подложки для элементов меню (Синие блоки главного меню) */
+/* Подложка под "Головна" */
+.menu-main__home {
+  position: absolute;
+  height: 80px;
+  width: 74px;
+  top: 0px;
+  left: 165px;
+  margin-left: 10px;
+  padding-top: 18px;
+}
+
+/* Иконка домик для "Головна" */
+.menu-main__home:hover:before {
+  content: "\f015";
+  font-size: 20px;
+  font-family: "icomoon" !important;
+  color: #ffffff;
+}
+
+/* Подложка под "Консультації" */
+.menu-main__consultation {
+  position: absolute;
+  height: 80px;
+  width: 108px;
+  top: 0px;
+  left: 246px;
+  margin-left: 10px;
+  padding-top: 18px;
+}
+
+/* Иконка знак вопроса для "Консультації" */
+.menu-main__consultation:hover:before {
+  content: "\f128";
+  font-size: 20px;
+  font-family: "icomoon" !important;
+  color: #ffffff;
+}
+
+/* Подложка под "Новини законодавства" */
+.menu-main__legislation-news {
+  position: absolute;
+  height: 80px;
+  width: 190px;
+  top: 0px;
+  left: 361px;
+  margin-left: 10px;
+  padding-top: 18px;
+}
+
+/* Иконка рупор для "Новини законодавства" */
+.menu-main__legislation-news:hover:before {
+  content: "\f0a1";
+  font-size: 20px;
+  font-family: "icomoon" !important;
+  color: #ffffff;
+}
+
+/* Подложка под "Рішення суду" */
+.menu-main__court-decisions {
+  position: absolute;
+  height: 80px;
+  width: 130px;
+  top: 0px;
+  left: 560px;
+  margin-left: 10px;
+  padding-top: 18px;
+}
+
+/* Иконка весы для "Рішення суду" */
+.menu-main__court-decisions:hover:before {
+  content: "\f24e";
+  font-size: 20px;
+  font-family: "icomoon" !important;
+  color: #ffffff;
+}
+
+/* Подложка под "Про нас" */
+.menu-main__about {
+  position: absolute;
+  height: 80px;
+  width: 73px;
+  top: 0px;
+  left: 699px;
+  margin-left: 10px;
+  padding: 18px 1px 0px 0px;
+}
+
+/* Иконка люди для "Про нас"*/
+.menu-main__about:hover:before {
+  content: "\f0c0";
+  font-size: 20px;
+  font-family: "icomoon" !important;
+  color: #ffffff;
+}
+/*--end: Подложки для элементов меню (Синие блоки главного меню) */
+/* end: Главное меню веб-сайта ============================================= */
+
+/*--begin: Форма поиска шапки сайта */
+/* Окно формы поиска */
+.search-form {
+  position: absolute;
+  width: 200px;
+  top: 15px;
+  right: 10px;
+}
+
+/* Поле формы поиска ввода искомых слов */
+.search-form__input {
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  top: center;
+  border: 2px solid #dcdee0;
+  border-radius: 17px;
+  outline: none;
+  background: #f0f2f5;
+  color: #000000;
+  font-size: 14px;
+}
+
+/* Кнопка формы поиска и кнопка слайдера */
+.search-form__button,
+button  {
+  position: absolute;
+  top: center;
+  right: 0px;
+  width: 42px;
+  height: 40px;
+  border: none;
+  background: #205c91;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Иконка лупа кнопки формы поиска */
+.search-form__button:before {
+  content: "\f002";
+  font-family: "icomoon" !important;
+  color: #ffffff;
+}
+/*--end: Поиск шапки сайта */
+/* end: Шапка веб-сайта ==================================================== */
+
+/* begin: Основная часть веб-сайта ========================================= */
+
+/* Заголовок главной страницы ОСТАННІ НОВИНИ (над слайдером) */
+.latest-news {
+  margin-top: -10px;
+  font-family: "Roboto", Arial, Verdana, Tahoma, sans-serif;
+  font-size: 16px;
+  color: #666666;
+  letter-spacing: 2px;
+  text-transform: uppercase; 
+  padding-left: 10px;
+}
+
+/* Заголовок главной страницы ПОПУЛЯРНІ ПУБЛІКАЦІЇ (под слайдером) */
+.popular-news {
+  font-family: "Roboto", Arial, Verdana, Tahoma, sans-serif;
+  font-size: 16px;
+  color: #666666;
+  letter-spacing: 2px;
+  text-transform: uppercase; 
+  padding-left: 10px;
+}
+
+/* begin: Слайдер последний новостей веб-сайта ============================= */
+/* Окно-блок слайдера */
+.slider {
+  max-height: 300px;
+  margin-top: 36px;
+}
+
+.container__slider {
+  height: 300px;
+  top: -18px;
+  background-color: #ffffff;
+  border: 1px solid #dcdee0;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px 0px rgba(65, 65, 65, 0.5);
+}
+
+.slider__inner {
+  position: relative;
+}
+
+.slider__item-content {
+  text-align: left;
+  width: 1114px;
+}
+
+/* Фото автора публикации на слайдере */
+.slider__image-author {
+  padding-left: 80px;
+  float: left;
+  margin-right: 20px;
+}
+
+/* Дата публикации на слайдере */
+.slider__date {
+  padding-top: 10px;
+  font-family: "Roboto", Arial, Verdana, Tahoma, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #205c91;
+}
+
+/* Имя автора публикации на слайдере */
+.slider__author-name {
+  padding-top: 20px;
+  font-family: "Roboto", Arial, Verdana, Tahoma, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+}
+
+/* Профессия автора публикации на слайдере */
+.slider__author-profession {
+  padding-top: 10px;
+  font-family: "Roboto", Arial, Verdana, Tahoma, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+/* Цвет текста с именем автора публикации и его профессии */
+.slider__author-name,
+.slider__author-profession {
+  color: #000000;
+}
+
+/* Заголовок публикации на слайдере */
+.slider__title {
+  padding-top: 50px;
+  padding-right: 73px;
+  font-family: "Roboto", Arial, Verdana, Tahoma, sans-serif;
+  font-size: 25px;
+  letter-spacing: 0.5px;
+}
+
+/* Подложка под иконку (справа) раздела сайта на слайдере */
+.slider__icon {
+  float: right;
+  margin-right: 100px;
+  width: 50px;
+  height: 50px;
+  background-color: #205c92;
+  border: 1px solid #ffffff;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0px 2px 1px 0px rgba(65, 65, 65, 0.5);
+}
+
+/* Изображение иконки (справа) слайдера */
+.slider__icon img {
+  padding: 7px 0px 0px 4px;
+}
+
+/* Общие свойства для кнопок стрелок по умолчанию */
+.default-btn {
+  display: inline-block;
+  /* Элемент как встроенный блок */
+  font-size: 20px;
+  /* Размер шрифта */
+  line-height: 24px;
+  /* Высота шрифта */
+  color: #a3a4a4;
+  /* Цвет шрифта */
+  font-weight: 500;
+  /* Толщина шрифта */
+  padding: 8px 30px 8px 24px;
+  /* Отступы */
+  border: 1px solid #a3a4a4;
+  /* Рамка со сплошной границей и цветом */
+  border-right-width: 22px;
+  /* Ширина правой стороні рамки */
+  position: relative;
+  /* Способ позиционирования. Положение элемента 
+                       устанавливается относительно его исходного места.*/
+  z-index: 2;
+  /* Наложение элемента друг на друга по оси z */
+  font-family: "Roboto", Arial, Verdana, Tahoma, sans-serif;
+  outline: none;
+  /* Удаляет внешние границы ссылки после ее нажатия. */
+}
+
+/* Свойства шрифта кнопки стрелки "вправо" */
+.default-btn:after {
+  content: "\f105";
+  /* Символ кнопка вправо */
+  font-family: "icomoon" !important;
+  /* Шрифт */
+  position: absolute;
+  /* Способ позиционирования. Указывает, что элемент абсолютно 
+                      позиционирован, при этом другие элементы отображаются на веб-странице 
+                      словно абсолютно позиционированного элемента и нет.*/
+  top: 50%;
+  /* Отступ сверху */
+  /* Трансформирует элемент. Сдвигает элемент по вертикали 
+    на указанное значение. (Эффект смены слайдов)*/
+  transform: translateY(-50%);
+  right: -12px;
+  /* Отступ справа */
+}
+
+/* Общие свойства по кнопка слайдера вправо и лево на слайдере */
+.slick-btn {
+  position: absolute;
+  /* Способ позиционирования. Указывает, что элемент абсолютно 
+                         позиционирован, при этом другие элементы отображаются на веб-странице 
+                         словно абсолютно позиционированного элемента и нет.*/
+  top: 70%;
+  /* Отступ сверху */
+  z-index: 3;
+  /* Наложение элемента друг на друга по оси z */
+  width: 50px;
+  /* Ширина 40px */
+  height: 50px;
+  /* Высота */
+  border: 1px solid #ffffff;
+  /* Рамка */
+  cursor: pointer;
+  /* Курсор при наведении на элемент меняется на руку */
+  outline: none;
+  /* Удаляет внешние границы ссылки после ее нажатия. */
+  background-color: #f0f2f5;
+  /* Цвет фона */
+  outline: none;
+}
+
+/* Свойства кнопки если она не активна */
+.slick-btn.slick-disabled {
+  cursor: default;
+  /* Возвращение курсора стрелкой по умолчанию */
+  background-color: transparent;
+  /* Прозрачный фон */
+  outline: none;
+}
+
+/* Свойство кнопки слайдера которая показывает влево */
+.slick-btn:before {
+  position: absolute;
+  /* Способ позиционирования. Указывает, что элемент абсолютно 
+                      позиционирован, при этом другие элементы отображаются на веб-странице 
+                      словно абсолютно позиционированного элемента и нет.*/
+  top: 50%;
+  /* Отступ сверху */
+  left: 50%;
+  /* Отступ слева */
+  transform: translate(-50%,
+      -50%);
+  /* Трансформирует элемент. Сдвигает элемент по вертикали 
+  на указанное значение. (Эффект смены слайдов). 
+  При этом в main.js прописано "infinite: fals" чтобы слайд не зацикливался*/
+  font-family: "icomoon" !important;
+  /* Шрифт */
+  color: #000000;
+  /* Цвет шрифта */
+  outline: none;
+}
+
+/* Стрелка слайдера показывает вправо */
+.slick-next:before {
+  content: "\f054";
+}
+
+/* Стрелка слайдера показывает влево */
+.slick-prev:before {
+  content: "\f053";
+}
+
+.slick-next {
+  right: 15px;
+  /* Отступ справа */
+  top: 120px;
+}
+
+.slick-prev {
+  left: 15px;
+  /* Отступ слева */
+  top: 120px;
+}
+/* end: Слайдер последний новостей веб-сайта =============================== */
+
+/* begin: Блок популярных публикаций веб-сайта ============================= */
+.news {
+  position: relative;
+  max-width: 1170px;
+  font-family: "Roboto", Arial, Verdana, Tahoma, sans-serif;
+  margin-left: auto;
+  margin-left: auto;
+  margin-top: 13px;
+}
+
+/* Контейнеры с блоками новостей */
+.container__news-top,
+.container__news-bottom {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1170px;
+  margin: -30px 5px 5px 5px;
+}
+
+.container__news-bottom {
+  margin-top: -40px;
+}
+
+/* Позиционирование верхнего левого и нижнего левого блоков */
+.news-top-left,
+.news-bottom-left {
+  width: 100%;
+  max-width: 360px;
+  height: 200px;
+  margin: 35px 10px 23px 0px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border-style: 1px solid #dcdee0;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px 0px rgba(65, 65, 65, 0.5);
+}
+
+/* Позиционирование верхнего центрального и нижнего центрального блоков */
+.news-top-center,
+.news-bottom-center {
+  width: 100%;
+  max-width: 360px;
+  height: 200px;
+  margin: 35px 10px 23px 10px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border-style: 1px solid #dcdee0;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px 0px rgba(65, 65, 65, 0.5);
+}
+
+/* Позиционирование верхнего правого и нижнего правого блоков */
+.news-top-right,
+.news-bottom-right {
+  width: 100%;
+  max-width: 360px;
+  height: 200px;
+  margin: 35px 0px 23px 10px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border-style: 1px solid #dcdee0;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px 0px rgba(65, 65, 65, 0.5);
+}
+
+/* Позиционирование иконок блоков поп.публикаций */
+.news-top-left__icon,
+.news-top-center__icon,
+.news-top-right__icon,
+.news-bottom-left__icon,
+.news-bottom-center__icon,
+.news-bottom-right__icon {
+  float: right;
+  margin-right: 12px;
+  background-color: #205c92;
+  border: 1px solid #ffffff;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0px 2px 1px 0px rgba(65, 65, 65, 0.5);
+}
+
+/* Анимация иконок на блоках популярных публикаций */ 
+.news-top-left__icon:hover,
+.news-top-center__icon:hover,
+.news-top-right__icon:hover,
+.news-bottom-left__icon:hover,
+.news-bottom-center__icon:hover,
+.news-bottom-right__icon:hover,
+.contacts__email:hover,
+.contacts__telegram:hover,
+.contacts__facebook:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/* Шрифт и фон блоков с датой */
+.news-top-left__date,
+.news-top-center__date,
+.news-top-right__date,
+.news-bottom-left__date,
+.news-bottom-center__date,
+.news-bottom-right__date {
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #205c91;
+  padding: 10px 0px 10px 10px;
+}
+
+/* Шрифт и фон блоков с автором */
+.news-top-left__author,
+.news-top-center__author,
+.news-top-right__author,
+.news-bottom-left__author,
+.news-bottom-center__author,
+.news-bottom-right__author {
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 10px 0px 10px 10px;
+}
+
+/* Шрифт и фон блоков с заголовком */
+.news-top-left__title,
+.news-top-center__title,
+.news-top-right__title,
+.news-bottom-left__title,
+.news-bottom-center__title,
+.news-bottom-right__title {
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  padding: 10px 10px 5px 10px;
+}
+/* end: Блок популярных публикаций веб-сайта ============================== */
+/* end: Основная часть веб-сайта ========================================== */
+
+/* begin: Подвал часть веб-сайта ========================================== */
+footer {
+  position: relative;
+  max-width: 1170px;
+  height: 110px;
+  top: -9px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+  border-style: 1px solid #dcdee0;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  box-shadow: 0px 1px 2px 0px rgba(65, 65, 65, 0.5);
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__container {
+  width: 160px;
+  padding: 40px 0px 0px 10px;
+}
+
+.contacts__email {
+  display: inline-block;
+  width: 30%;
+  border: 1px solid #a3a4a4;
+  background-color: #205c92;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 9px 0px 0px 10px;
+  margin-right: 10px;
+}
+
+.contacts__email:before {
+  content: "\f0e0";
+  font-family: "icomoon" !important;
+  color: #ffffff;
+}
+
+.contacts__telegram {
+  display: inline-block;
+  width: 30%;
+  border: 1px solid #a3a4a4;
+  background-color: #205c92;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 9px 0px 0px 9px;
+  margin-right: 10px;
+}
+
+.contacts__telegram:before {
+  content: "\f1d8";
+  font-family: "icomoon" !important;
+  color: #ffffff;
+}
+
+.contacts__facebook {
+  display: inline-block;
+  width: 30%;
+  border: 1px solid #a3a4a4;
+  background-color: #205c92;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 9px 0px 0px 13px;
+}
+
+.contacts__facebook:before {
+  content: "\f09a";
+  font-family: "icomoon" !important;
+  color: #ffffff;
+}
+
+.copy-text {
+  position: absolute;
+  color: #464646;
+  top: 40px;
+  left: 442px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  font-family: "Roboto", Arial, Verdana, Tahoma, sans-serif;
+}
+
+/* Иконки успешной проверки сайта на валидность HTML и CSS */
+.valid-icon {
+  position: absolute;
+  float: right;
+  right: 7px;
+  top: 39px;
+}
+
+/* Кнопка ВВЕРХ */
+#toTop {
+  display: none;
+  text-decoration: none;
+  position: fixed;
+  bottom: 35px;
+  right: 10px;
+  overflow: hidden;
+  width: 15%;
+  height: 25%;
+  border: none;
+  float: left;
+  text-indent: 100%;
+  background: url(../img/up-button_icon.png) no-repeat right bottom;
+  background-size: 50px 50px;
+}
+
+#toTop:active,
+#toTop:focus {outline: none;}
+/* end: Кнопка ВВЕРХ */ 
+
+/* end: Подвал часть веб-сайта ============================================= */

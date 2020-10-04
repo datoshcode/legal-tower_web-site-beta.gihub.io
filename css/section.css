@@ -1,0 +1,126 @@
+/* =================== Стили для разделов веб-сайта ============================== */
+
+/* Заголовок страницы раздела "ПУБЛІКАЦІЇ РОЗДІЛУ "КОНСУЛЬТАЦІЇ" */
+.about-range {
+  margin-top: -10px;
+  padding-left: 10px;
+  font-family: "Roboto", Arial, Verdana, Tahoma, sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase; 
+  color: #666666;
+}
+
+/* begin: Блок публикаций раздела веб-сайта ============================= */
+.section-publications {
+  position: relative;
+  max-width: 1170px;
+  font-family: "Roboto", Arial, Verdana, Tahoma, sans-serif;
+  margin-left: auto;
+  margin-left: auto;
+  margin-top: 13px;
+}
+
+/* Контейнер с блоками публикаций */
+.container__publications {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1170px;
+  margin: -30px 5px 5px 5px;
+}
+
+/* Позиционирование левого блока */
+.publication-left {
+  width: 100%;
+  max-width: 360px;
+  height: 200px;
+  margin: 35px 10px 23px 0px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border-style: 1px solid #dcdee0;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px 0px rgba(65, 65, 65, 0.5);
+}
+
+/* Позиционирование центрального блока */
+.publication-center {
+  width: 100%;
+  max-width: 360px;
+  height: 200px;
+  margin: 35px 10px 23px 10px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border-style: 1px solid #dcdee0;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px 0px rgba(65, 65, 65, 0.5);
+}
+
+/* Позиционирование правого блока */
+.publication-right {
+  width: 100%;
+  max-width: 360px;
+  height: 200px;
+  margin: 35px 0px 23px 10px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border-style: 1px solid #dcdee0;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px 0px rgba(65, 65, 65, 0.5);
+}
+
+/* Позиционирование и внешний вид иконок блоков публикаций */
+.publication-left__icon,
+.publication-center__icon,
+.publication-right__icon {
+  float: right;
+  margin-right: 12px;
+  background-color: #205c92;
+  border: 1px solid #ffffff;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0px 2px 1px 0px rgba(65, 65, 65, 0.5);
+}
+
+/* Отключаем анимацию иконок на блоках публикаций раздела */ 
+.publication-left__icon:hover,
+.publication-center__icon:hover,
+.publication-right__icon:hover {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+}
+
+/* Шрифт и фон даты блоков публикаций */
+.publication-left__date,
+.publication-center__date,
+.publication-right__date {
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #205c91;
+  padding: 10px 0px 10px 10px;
+}
+
+/* Шрифт имени автора блоков публикаций */
+.publication-left__author,
+.publication-center__author,
+.publication-right__author {
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 10px 0px 10px 10px;
+}
+
+/* Шрифт заголовком блоков публикаций */
+.publication-left__title,
+.publication-center__title,
+.publication-right__title {
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  padding: 10px 10px 5px 10px;
+}
+
+/* end: Блок публикаций раздела веб-сайта ============================= */

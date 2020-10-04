@@ -1,0 +1,303 @@
+<!-- =================== Раздел веб-сайта "Судові рішення" ================== -->
+
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Правова вежа / Судові рішення</title>
+  <link rel="shortcut icon" href="../../img/icon.png" type="image/png" />
+
+  <!-- Подключаем внешние шрифты -->
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet" />
+
+ <!-- begin: Внешние стили сайта -->
+  <link rel="stylesheet" href="../../css/normalize.css" />
+  <link rel="stylesheet" href="../../css/fonts.css" />
+
+  <!-- Стили кнопок -->
+  <link rel="stylesheet" href="../../css/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="../../css/slick.css" />
+  <link rel="stylesheet" href="../../css/jquery.formstyler.css" />
+
+  <!-- Основные стили -->
+  <link rel="stylesheet" href="../../css/main-style.css" />
+  <link rel="stylesheet" href="../../css/section.css" />
+  <link rel="stylesheet" href="../../css/media.css" />
+  <!-- end: Внешние стили сайта -->
+</head>
+
+<!-- begin: Тело веб-сайта =============================================== -->
+<body>
+ <!-- begin: Шапка веб-сайта ============================================== -->  
+  <header class="header">
+    <div class="header__content">
+      <div class="header__container">
+
+        <!-- begin: Вложенность элементов шапки сайта -->
+        <div class="header__content-inner">
+
+           <!-- begin: Банер шапки сайта -->
+          <div class="header__logo">
+            <a href="../../index.html">
+              <img src="../../img/baner.png" alt="Логотип сайта" />
+            </a>
+          </div>
+          <!-- end: Банер шапки сайта -->
+
+          <!-- begin: Главное меню сайта -->
+          <nav class="top-menu">
+
+            <!-- begin: Кнопка Меню для мобильной версии -->
+            <div class="header__btn-menu">
+              <span class="icon-bars"></span>
+            </div>
+            <!-- end: Кнопка Меню для мобильной версии -->
+
+            <ul class="menu-main">
+
+              <!-- Пункт меню "Головна" -->
+              <li class="menu-main__home">
+                <a href="../../index.html">Головна</a>
+              </li>
+
+              <!-- Пункт меню "Консультації" -->
+              <li class="menu-main__consultation">
+                <a href="../consultation/consultation.html">Консультації</a>
+              </li>
+
+              <!-- Пункт меню "Новини законодавства" -->
+              <li class="menu-main__legislation-news">
+                <a href="../legislation_news/legislation_news.html">Новини законодавства</a>
+              </li>
+
+              <!-- Пункт меню "Судові рішення" -->
+              <li class="menu-main__court-decisions">
+                <a href="#" class="current" >Судові рішення</a>
+              </li>
+
+              <!-- Пункт меню "Про нас" -->
+              <li class="menu-main__about">
+                <a href="../about_us/about_us.html">Про нас</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- end: Главное меню сайта -->
+
+          <!-- begin: Форма поиска главного меню сайта -->
+          <form class="search-form">
+            <div class="search-form__content">
+                <input class="search-form__input" type="text" placeholder="Пошук..." />
+                <button class="search-form__button" type="submit"></button>
+            </div>
+          </form>
+          <!-- end: Форма поиска главного меню сайта -->
+          </div>
+          <!-- end: Вложенность элементов шапки сайта -->
+        </div>
+      </div>
+    </header>
+<!-- end: Шапка веб-сайта ========================================================= --> 
+        
+<!-- begin: Основная часть веб-сайта ============================================== --> 
+  <main>
+    <div id="up" class="main__container">
+      <div class="main__content">
+        <!-- Поле расположения элементов Меню для мобильной версии -->
+        <div class="menu-panel"></div>
+
+        <!-- Заголовок страницы раздела ПУБЛІКАЦІЇ РОЗДІЛУ "НОВИНИ ЗАКОНОДАВСТВА" -->
+        <div class="about-range">Публікації розділу &laquo;Судові рішення&raquo;</div> 
+
+        <!-- begin: Блоки публикаций раздела -->
+        <div class="section-publications">
+
+          <!-- begin: Второй ряд блоков публикаций раздела (идёт над первым)
+          <div class="row-publications-2">
+            <div class="container__publications">
+
+              begin: Левый блок с публикацией 
+              <div class="publication-left">
+                <div class="publication-left__icon">
+                  <img src="../../img/icon-bullhorn.png" alt="Иконка раздела сайта Новини законодавства">
+                </div>
+                <div class="publication-left__date">##.##.2020</div>
+                <div class="publication-left__author">Автор</div>       
+                  <div class="publication-left__title">
+                  <a href="Ссылка на страницу с публикацией раздела">
+                    &laquo; ... &raquo;
+                    </a>
+                  </div>
+              </div>
+               end: Левый блок с публикацией 
+
+               begin: Центральный блок с публикацией 
+              <div class="publication-center">
+                <div class="publication-center__icon">
+                  <img src="../../img/icon-bullhorn.png" alt="Иконка раздела сайта Новини законодавства">
+                </div>
+                <div class="publication-center__date">##.##.2020</div>
+                <div class="publication-center__author">Автор</div>
+                  <div class="publication-center__title">
+                  <a href="Ссылка на страницу с публикацией раздела">
+                    &laquo; ... &raquo;
+                    </a>
+                  </div>
+              </div>
+               end: Центральный блок с публикацией 
+
+               begin: Правый блок с публикацией 
+              <div class="publication-right">
+                <div class="publication-right__icon">
+                  <img src="../../img/icon-bullhorn.png" alt="Иконка раздела сайта Новини законодавства">
+                </div>
+                <div class="publication-right__date">##.##.2020</div>
+                <div class="publication-right__author">Автор</div>
+                  <div class="publication-right__title">
+                  <a href="Ссылка на страницу с публикацией раздела">
+                    &laquo; ... &raquo;
+                    </a>
+                  </div>
+              </div>
+               end: Правый блок с публикацией 
+            </div>
+          </div>
+          end: Второй ряд блоков публикаций раздела -->
+
+         <!-- begin: Первый ряд блоков публикаций раздела (считается снизу страницы)-->
+         <div class="row-publications-1">
+            <div class="container__publications">
+
+              <!-- begin: Левый блок с публикацией -->
+              <div class="publication-left">
+                <div class="publication-left__icon">
+                  <img src="../../img/icon-balance-scale.png" alt="Иконка раздела сайта Судові рішення"/>
+                </div>
+                <div class="publication-left__date">12.02.2019</div>
+                <div class="publication-left__author">Слуцька Т.І.</div>       
+                  <div class="publication-left__title">
+                  <a href="Slutska_T_12.02.2019.html">
+                    &laquo;Поняття &laquo;закон&raquo;, згідно ст. 263 КК, має
+                розширене тлумачення і включає в себе законодавство у цілому,
+                в тому числі нормативні акти, що регулюють право- відносини,
+                порушення яких утворює...&raquo;
+                    </a>
+                  </div>
+              </div>
+              <!-- end: Левый блок с публикацией -->
+
+              <!-- begin: Центральный блок с публикацией -->
+              <div class="publication-center">
+                <div class="publication-center__icon">
+                  <img src="../../img/icon-balance-scale.png" alt="Иконка раздела сайта Судові рішення"/>
+                </div>
+                <div class="publication-center__date">06.03.2019</div>
+                <div class="publication-center__author">Слуцька Т.І.</div>
+                  <div class="publication-center__title">
+                  <a href="Slutska_T_06.03.2019.html">
+                    &laquo;Чжан проти України&raquo;: ігноруючи конкретні, стійкі
+                та важливі аргументи обвинуваченого, національні суди не
+                виконують свій обов’язок відповідно до п. 1 ст. 6
+                Конвенції...&raquo;
+                    </a>
+                  </div>
+              </div>
+              <!-- end: Центральный блок с публикацией -->
+
+              <!-- begin: Правый блок с публикацией -->
+              <div class="publication-right">
+                <div class="publication-right__icon">
+                  <img src="../../img/icon-balance-scale.png" alt="Иконка раздела сайта Судові рішення"/>
+                </div>
+                <div class="publication-right__date">25.10.2018</div>
+                <div class="publication-right__author">Слуцька Т.І.</div>
+                  <div class="publication-right__title">
+                  <a href="Slutska_T_25.10.2018.html">
+                    &laquo;Інститут угод у кримінальному провадженні жодним чином не 
+                кореспондуються з інститутом звільнення від кримінальної відповідальності, 
+                ...&raquo;
+                    </a>
+                  </div>
+              </div>
+              <!-- end: Правый блок с публикацией -->
+            </div>
+          </div>
+          <!-- end: Первый ряд блоков публикаций раздела (считается снизу страницы)-->
+
+        </div>
+        <!-- end: Блоки публикаций раздела -->
+      </div>
+    </div>
+  </main>
+
+<!-- end: Основная часть веб-сайта ================================================ -->
+
+<!-- begin: Подвал веб-сайта ===================================================== -->
+  <footer>
+    <div class="footer__container">
+      <!-- begin: Контакты для связи -->
+      <div class="contacts">
+        <div class="contacts__container">
+          <a href="mailto:pravova_vezha@ukr.net">
+          <div class="contacts__email" title="Надіслати нам листа">
+          </div></a>
+          <div class="contacts__telegram" title="Наша сторінка у &laquo;Telegram&raquo;"></div>
+          <div class="contacts__facebook" title="Наша сторінка у &laquo;Facebook&raquo;"></div>
+        </div>
+      </div>
+      <!-- end: Контакты для связи -->
+
+      <div class="valid-icon">
+        <img src="../../img/valid.png" title="Перевірений та якісний код. Відповідає вимогам стандартів W3C!" alt="Иконка валидности сайта и соответствие его кода html и css стандартам W3C">
+      </div>  
+
+      <!-- Автор сайта и авторские права-->
+      <div class="footer__copy">
+        <div class="footer__container">
+          <div class="copy-text">
+            Дизайн та верстка веб-сайту: <a
+                target="_blank"
+                href="https://www.facebook.com/datoshXcode"
+                title="Сторінка автора на Facebook"
+                >Андрій Овчаров.</a> <br />
+            &copy; 2020. Всі права захищено.
+          </div>
+        </div>
+      </div>
+
+     <!-- Библиотека jQurey-->
+      <script src="../../js/jquery-3.5.1.min.js"></script>
+
+      <!-- begin: Скрипты для кнопки Меню мобильной версии сайта -->
+      <script src="../../js/jquery.fancybox.min.js"></script>
+      <script src="../../js/slick.min.js"></script>
+      <script src="../../js/jquery.formstyler.min.js"></script>
+      <script src="../../js/main.js"></script>
+      <!-- end: Скрипты для кнопки Меню мобильной версии сайта -->
+    </div>
+  </footer>
+  <!-- end: Подвал сайта ======================================================== -->
+
+  <!-- begin: Скрипты и плагин для кнопки ВВЕРХ -->
+    <script src="../../js/easing.js"></script>
+    
+    <!-- UItoTop plugin -->
+    <script src="../../js/jquery.ui.totop.js"></script>
+
+    <!-- Starting the plugin -->
+    <script>
+      $(document).ready(function () {
+     var defaults = {
+         containerID: 'toTop', // fading element id
+       containerHoverID: 'toTopHover', // fading element hover id
+       scrollSpeed: 1200,
+       easingType: 'linear'
+     };  
+        $().UItoTop({ easingType: "easeOutQuart" });
+      });
+    </script>
+    <!-- end: Скрипты и плагин для кнопки ВВЕРХ -->
+</body>
+<!-- end: Тело веб-сайта ======================================================== -->
+</html>

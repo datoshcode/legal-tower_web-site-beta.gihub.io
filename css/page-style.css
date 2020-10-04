@@ -1,0 +1,238 @@
+/* =================== Стили для страниц веб-сайта с публикациями =============== */
+
+/* begin: =================== Основная часть веб-сайта =========================== */
+.main__container {
+  max-width: 1110px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: -20px;
+  bottom: 10px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: 1px solid #dcdee0;
+  box-shadow: 0px 1px 2px 0px rgba(65, 65, 65, 0.5);
+}
+
+a {
+  color: #205c92;
+  /* Цвет обычной ссылки */
+  text-decoration: none;
+  /* Убираем подчеркивание у ссылок */
+}
+
+a:visited {color: #800080;} /* Цвет посещённой ссылки */
+
+a:hover {
+  color: #800000;
+  /* Цвет ссылки при наведении на нее курсора мыши */
+  text-decoration: none;
+  /* Добавляем подчеркивание */
+}
+
+/* Горизонтальная линия */
+hr {
+  height: 2px; 
+  background: #205c92; 
+  margin: 10px; 
+}
+
+.publication {
+  padding: 10px 20px;
+  font-family: "Roboto", Arial, Verdana, Tahoma, sans-serif;
+  text-align: justify;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+
+/* Иконка раздела (справа вверху) */
+.header__publication__icon {
+  float: right;
+  margin: -10px 10px 0px 0px;
+  background-color: #205c92;
+  width: 45px;
+  border: 1px solid #ffffff;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0px 2px 1px 0px rgba(65, 65, 65, 0.5);
+}
+
+/* Позиционирование изображения автора публикации */
+.header__photo-author {
+  float: left;
+  padding: 0px 20px 10px 0px;
+}
+
+.header__photo-author img {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+/* Дата публикации */
+.header__publication__date {
+  font-weight: 500;
+  font-size: 18px;
+  color: #205c91;
+}
+
+/* Имя автора публикации */
+.header__publication__author-name {
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+/* Профессия автора публикации */
+.header__publication__author-profession {
+  padding-top: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+/* Главный заголовок публикации */
+h1 {
+  padding-top: 10px;
+  text-align: left;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* Подзаголовки публикации */
+h2, 
+h3 {
+  font-weight: 500;
+  margin: 60px 0px 10px 30px;
+}
+
+/* Шрифт для текста и ссылок публикации */
+.main-publication p,
+.main-publication a {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+/* Отступы первых абзацев предложений публикации */
+.main-publication p:first-letter {margin-left: 20px;}
+
+/* Кубические маркеры списка */
+.list-square li {
+  list-style: square;
+  margin-left: 30px;
+}
+
+/* Изображение кавычек цитат */
+.pull-quote img {
+  width: 40px;
+  vertical-align: bottom;
+}
+
+/* Расположение кавычек цитат */
+.pull-quote {
+  float: right;
+  max-width: 50%;
+  border-top: thin black solid;
+  border-bottom: thick black solid;
+  font-size: 120%;
+  line-height: 130%;
+  font-style: italic;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+/* Выделение текста жирным шрифтом */
+.bold {font-weight: 600;}
+
+/* Выделение текста курсивом */
+.italic {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.min-spacing {letter-spacing: 0.2px;}
+
+/* begin: Инструкции для таблиц */
+table {border: 1px solid #205c92;}
+
+table p,
+h3 {padding: 0px 8px;}
+
+table h3 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+td,
+th {padding: 5px;} /* Поля вокруг текста в таблице */
+
+/* Фон устаревшей редакции закона в сравнительных таблицах */
+.old {background-color: #efefef;}
+
+/* Цвет текста устаревшей редакции закона в сравнительных таблицах */
+.old p {color: #5c5c5c;}
+
+/* Выделение текста маркером */
+mark {
+  background: #ffec82;
+  padding: 0 3px;
+}
+
+.time-start {
+ float: right;
+ padding: 10px;
+}
+
+.time-end {
+  float: left;
+   padding: 10px;
+  margin-top: -26px;
+}
+/* end: Инструкции для таблиц */
+
+/* Подвал публикации */
+.footer__publication {
+  text-align: center;
+  font-weight: 500;
+}
+
+.footer-publication p,
+.footer-publication a {font-size: 16px;}
+
+/* Отдельные инструкции для стилей страницы "Про нас" */
+.header-about__logo {
+  float: left;
+  padding: 0px 20px 10px 0px;
+}
+
+.header-about__logo img {margin-top: -15px;}
+
+/* Главный заголовок страницы "Про нас" */
+h1.about-h1 {text-align: center;}
+
+/* Подзаголовок страницы "Про нас" */
+h2.about-h2 {color: #205c91;}
+
+/* end: =================== Основная часть веб-сайта ============================ */
+
+/* begin: =================== Подвал веб-сайта ================================== */
+/* begin: Кнопка ВВЕРХ */ 
+#toTop {
+  display: none;
+  text-decoration: none;
+  position: fixed;
+  bottom: 35px;
+  right: 10px;
+  overflow: hidden;
+  width: 15%;
+  height: 25%;
+  border: none;
+  float: left;
+  text-indent: 100%;
+  background: url(../img/up-button_icon.png) no-repeat right bottom;
+  background-size: 50px 50px;
+}
+
+#toTop:active,
+#toTop:focus {outline: none;}
+/* end: Кнопка ВВЕРХ */ 

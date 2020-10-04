@@ -479,6 +479,12 @@
   .footer__publication a {
     font-size: 16px;
   }
+  
+  .main-publication a,
+  .footer__publication a {
+    display: none;
+  }
+  
 
   .photo-author img {
     width: 100%;

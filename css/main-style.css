@@ -292,7 +292,7 @@ li {
 .search-form__button,
 button  {
   position: absolute;
-  top: 0;
+  top: 10px;
   right: 0px;
   width: 42px;
   height: 40px;

@@ -6,7 +6,8 @@
 }  
 
 .slider__icon {
-  margin-right: 230px;
+  margin-right: 150px;
+}
 }
 
 .header__photo-author {
@@ -29,7 +30,7 @@
 
 /* ============================== begin: Экран до 550px =========================== */
 @media (max-width: 550px) {
-
+  
   .main__content {
     margin-top: 70px;
   }
@@ -290,7 +291,7 @@
   }
 
   .slider__title {
-    max-width: 950px;
+    max-width: 930px;
     width: 100%;
     font-size: 250%;
     padding-left: 10px;

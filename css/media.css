@@ -1,8 +1,5 @@
 /* ======== Адаптив сайта под разную ширину экрана мобильных телефонов ============ */
 @media (max-width: 500px) {
-  * {
-    box-sizing: border-box;
-  }
   
   .slider__title {
     padding-right: 137px;
@@ -63,10 +60,6 @@
 /* ============================== begin: Экран до 680px =========================== */
 @media (max-width: 680px) {
   
-  * {
-    box-sizing: border-box;
-  }
-  
   .publication-author-name,
   .publication-author-profession {
     font-size: 100%;
@@ -117,10 +110,6 @@
 
 /* ============================== begin: Экран до 995px =========================== */
 @media (max-width: 995px) {
-  
-  * {
-    box-sizing: border-box;
-  }
   
   .header__logo img {
     width: 343px;

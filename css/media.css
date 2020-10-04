@@ -2,6 +2,7 @@
 @media (max-width: 500px) {
   .slider__title {
     padding-right: 137px;
+    padding-left: 10px;
 }  
 
 .slider__icon {
@@ -292,6 +293,7 @@
     max-width: 950px;
     width: 100%;
     font-size: 250%;
+    padding-left: 10px;
   }
 
   .slider__date {

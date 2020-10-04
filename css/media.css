@@ -1,6 +1,5 @@
 /* ======== Адаптив сайта под разную ширину экрана мобильных телефонов ============ */
 @media (max-width: 500px) {
-  
   .slider__title {
     padding-right: 137px;
 }  
@@ -8,6 +7,23 @@
 .slider__icon {
   margin-right: 150px;
 }
+
+.header__photo-author {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+  }
+
+  .header__publication-date,
+  .header__publication-author-name,
+  .header__publication-author-profession
+   {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
 }
 
 /* ============================== begin: Экран до 550px =========================== */
@@ -39,7 +55,6 @@
     margin: 0 30px;
   }
 
-
   .search-form {
     width: 100% !important;
     height: 0;
@@ -59,46 +74,6 @@
 
 /* ============================== begin: Экран до 680px =========================== */
 @media (max-width: 680px) {
-  
-  .publication-author-name,
-  .publication-author-profession {
-    font-size: 100%;
-    text-align: left;
-  }
-
-  .header-legislation-news a {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  .photo-author {
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-    float: none;
-  }
-
-  figure {
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .publication-date,
-  .publication-author-name,
-  .publication-author-profession
-   {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-
-  .publication-icon img,
-  .publication-icon {
-    display: none;
-  } 
-
   .slider__title {
     max-width: 680px !important;
     width: 100%;
@@ -145,12 +120,12 @@
   form {
     top: -34px;
     width: 42%;
-  }
+}
 
-.search-form__button {
-  margin-top: 150px;
-  padding-right: 8px;
-  margin-right: 15px;
+  .search-form__button {
+    margin-top: 150px;
+    padding-right: 8px;
+    margin-right: 15px;
 }
 
   input.search-form__input {
@@ -475,12 +450,12 @@
 
   .main-publication p,
   .main-publication a,
+  .old p,
   .footer__publication p,
   .footer__publication a {
     font-size: 16px;
   }
   
-
   .photo-author img {
     width: 100%;
     height: 100%;
@@ -501,6 +476,7 @@
   .footer__container {
     display: block;
     align-content: center;
+    margin-top: 50px;
   }
 
   .contacts__container {
@@ -526,7 +502,7 @@
   }
 
   .copy-text {
-    font-size: 18px;
+    font-size: 16px;
   }
 
 /* Иконки валидации сайта */
@@ -556,224 +532,4 @@
     background-size: 150px 150px;
   }
 }
-
 /* ============================== end: Экран до 995px =========================== */
-
-
-
-
-
-
-
-@media (max-width: 1156px){
-  .services__items{
-    display: block;
-  }
-  .services__item{
-    max-width: 80%;
-    min-height: 330px;
-    margin: 30px auto;
-  }
-  .form__inner{
-    background-image: none;
-  }
-  .news__inner{
-    display: block;
-  }
-  .news__slider{
-    max-width: 100%;
-    margin-bottom: 90px;
-  }
-  .news__blog{
-    max-width: 100%;
-    display: block;
-    margin-bottom: 30px;
-  }
-  .news__blog:after{
-    content: "";
-    clear: both;
-    display: block;
-  }
-  .news__images{
-    float: left;
-    margin-right: 50px;
-  }
-  .news{
-    padding-bottom: 60px;
-  }
-  .footer__info{
-    max-width: 465px;
-    margin-bottom: 25px;
-  }
-}
-@media (max-width: 1050px){
-  .footer__inner{
-    display: block;
-  }
-  .footer__map{
-    max-width: 100%;
-  }
-}
-
-  .services__top,
-  .news__top{
-    display: block;
-  }
-  .services__title-box,
-  .form__title-box,
-  .news__title-box{
-    padding-left: 0;
-    text-align: center;
-    margin: 0 auto 30px;
-  }
-  .services__title-box:before,
-  .form__title-box:before,
-  .news__title-box:before{
-    display: none;
-  }
-  .services__btn,
-  .news__btn{
-    text-align: center;
-  }
-  .form__box-inner{
-    display: block;
-  }
-  .form__box-left{
-    max-width: 100%;
-  }
-  .form__box-right{
-    max-width: 100%;
-  }
-  .form__box-inner .jq-selectbox__select{
-    margin-bottom: 10px;
-  }
-  .form{
-    padding-bottom: 25px;
-  }
-  .advantages__inner{
-    display: block;
-  }
-  .advantages-item{
-    max-width: 100%;
-    margin-bottom: 30px;
-  }
-}
-@media (max-width: 700px){
-  .header__btn{
-    float: none;
-  }
-  .header__contacts{
-    text-align: center;
-  }
-  .header__btn:before{
-    display: none;
-  }
-  .footer__info .header__btn:before{
-    display: block;
-  }
-  .header__btn-menu{
-    display: block;
-  }
-  .menu ul{
-    display: none;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin-top: 20px;
-    z-index: 50;
-  }
-  .menu li{
-    display: block;
-    text-align: center;
-  }
-  .menu a{
-    display: block;
-    background-color: #ffc222;
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-  }
-  .menu li + li{
-    padding-left: 0;
-  }
-}
-@media (max-width: 600px){
-  .services__item{
-    max-width: 100%;
-    min-height: 375px;
-    margin: 30px auto;
-  }
-}
-
-@media (max-width: 550px) {
-  .menu_main {
-    padding-top: 0;
-  }
-
-  .menu__main li {
-    display: block;
-    background-color: #205c92;
-    border: 1px solid #ffffff;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    box-shadow: 0px 2px 1px 0px rgba(65, 65, 65, 0.5);
-  }
-
-  .menu__main li:after {
-    content: none;
-  }
-
-  .menu__main a {
-    padding: 25px 0 20px;
-    margin: 0 30px;
-  }
-}
-
-@media (max-width: 540px){
-  .news__slider{
-    padding: 50px 15px 25px 25px;
-  }
-  .news__slider:before{
-    left: 25px;
-  }
-  .news__slider-inner .slick-next{
-    right: -20px;
-  }
-  .news__slider-inner .slick-prev{
-    right: 35px;
-  }
-  .news__images{
-    float: none;
-  }
-  .news__slider-inner .slick-btn{
-    bottom: -90px;
-  }
-}
-@media (max-width: 414px){
-  .slider__title{
-    font-size: 24px;
-  }
-  .slider__text{
-    font-size: 16px;
-  }
-}
-@media (max-width: 400px){
-  .header__btn:before{
-    display: block;
-  }
-  .advantages-item{
-    padding: 0;
-  }
-}
-@media (max-width: 375px){
-  .header__email{
-    padding-right: 30px;
-  }
-}
-
-
-
-@media (min-width: 700px){
-  .menu ul{
-    display: block !important;
-  }
-}

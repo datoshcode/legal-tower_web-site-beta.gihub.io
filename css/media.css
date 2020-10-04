@@ -473,16 +473,12 @@
     padding-top: 50px;
   }
 
+  .main-publication,
   .main-publication p,
   .main-publication a,
   .footer-publication p,
   .footer__publication a {
     font-size: 16px;
-  }
-  
-  .main-publication a,
-  .footer__publication a {
-    display: none;
   }
   
 

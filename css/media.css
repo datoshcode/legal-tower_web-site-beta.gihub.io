@@ -1,5 +1,9 @@
 /* ======== Адаптив сайта под разную ширину экрана мобильных телефонов ============ */
 @media (max-width: 500px) {
+  * {
+    box-sizing: border-box;
+  }
+  
   .slider__title {
     padding-right: 137px;
 }  
@@ -53,17 +57,16 @@
   .slider__author-profession {
     padding-left: 20px;
   }
-  
-  .main-publication,
-  .footer__publication {
-    font-size: 16px;
-  }
 }
 /* ============================== end: Экран до 550px ============================= */
 
 /* ============================== begin: Экран до 680px =========================== */
 @media (max-width: 680px) {
-
+  
+  * {
+    box-sizing: border-box;
+  }
+  
   .publication-author-name,
   .publication-author-profession {
     font-size: 100%;
@@ -114,6 +117,10 @@
 
 /* ============================== begin: Экран до 995px =========================== */
 @media (max-width: 995px) {
+  
+  * {
+    box-sizing: border-box;
+  }
   
   .header__logo img {
     width: 343px;
@@ -477,10 +484,9 @@
     padding-top: 50px;
   }
 
-  .main-publication,
   .main-publication p,
   .main-publication a,
-  .footer-publication p,
+  .footer__publication p,
   .footer__publication a {
     font-size: 16px;
   }

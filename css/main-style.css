@@ -19,8 +19,6 @@ a {
   color: #205c92;
   text-decoration: none;
   /* Удаляем подчеркивание ссылок */
-  display: inline-block;
-  /* Блочное отображение ссылок */
 }
 
 a:visited {

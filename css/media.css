@@ -259,7 +259,7 @@
   /* Заголовки главной страницы "ОСТАННІ НОВИНИ"  и "ПОПУЛЯРНІ ПУБЛІКАЦІЇ" */
   .latest-news,
   .popular-news {
-    font-size: 150%;
+    font-size: 200%;
     font-weight: 500;
   }
 
@@ -274,7 +274,7 @@
 
 /* Заголовки разделов публикаций для страниц с разделами сайта */
   .about-range {
-    font-size: 150%;
+    font-size: 200%;
     margin-top: 0px;
     font-weight: 500;
   }

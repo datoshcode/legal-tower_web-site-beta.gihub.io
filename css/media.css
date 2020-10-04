@@ -102,7 +102,7 @@
   .slider__title {
     max-width: 600px !important;
     width: 100%;
-    font-size: 120% !important; 
+    font-size: 130% !important; 
     text-align: center;
   }
 }
@@ -112,12 +112,11 @@
 @media (max-width: 995px) {
   
   .header__logo img {
-    width: 220px;
-    height: 96px;
+    width: 343px;
   }
 
   .header__container {
-    height: 98px;
+    height: 150px;
   }
 
   /* Кнопка Меню для мобильной версии */
@@ -125,8 +124,8 @@
    display: block;
    float: right;
    padding-right: 50px;
-   padding-top: 20px;
-   font-size: 50px;
+   padding-top: 30px;
+   font-size: 70px;
   }
 
   .top-menu {
@@ -139,7 +138,7 @@
 
   /* Панель элементов Меню для мобильной версии на которой расположеные элементы */
   .menu-panel {
-    margin-top: 700px;
+    margin-top: 720px;
   }
 
   /*--begin Форма поиска */
@@ -147,11 +146,11 @@
     top: -34px;
     width: 42%;
   }
-  
-  .search-form__button {
-    margin-top: 100px;
-    padding-right: 8px;
-    margin-right: 15px;
+
+.search-form__button {
+  margin-top: 150px;
+  padding-right: 8px;
+  margin-right: 15px;
 }
 
   input.search-form__input {
@@ -171,7 +170,7 @@
   }
 
 .search-form__content {
-    margin-top: 100px;
+    margin-top: 150px;
     padding-left: 15px;
     padding-right: 15px;
    }
@@ -220,23 +219,23 @@
 
 /*-- begin: Главное навигационное меню */
 .menu-main__home {
-   margin-top: 224px;
+   margin-top: 300px;
  }
 
  .menu-main__consultation {
-   margin-top: 331px;
+   margin-top: 405px;
  }
 
 .menu-main__legislation-news {
-   margin-top: 437px;
+   margin-top: 511px;
  }
 
 .menu-main__court-decisions {
-   margin-top: 543px;
+   margin-top: 617px;
  }
 
   .menu-main__about {
-    margin-top: 650px;
+    margin-top: 723px;
   }
 
   .menu-main__home,
@@ -260,7 +259,7 @@
   /* Заголовки главной страницы "ОСТАННІ НОВИНИ"  и "ПОПУЛЯРНІ ПУБЛІКАЦІЇ" */
   .latest-news,
   .popular-news {
-    font-size: 130%;
+    font-size: 150%;
   }
 
   .latest-news {
@@ -269,12 +268,12 @@
   }
 
   .popular-news {
-    margin-top: 173px;
+    margin-top: 221px;
   }
 
 /* Заголовки разделов публикаций для страниц с разделами сайта */
   .about-range {
-    font-size: 130%;
+    font-size: 150%;
     margin-top: 0px;
   }
 
@@ -285,8 +284,8 @@
      padding-left: auto;
      float: left;
      background-color: #ffffff;
-     height: 60px;
-     width: 60px;
+     height: 100px;
+     width: 100px;
      box-shadow: 0px 1px 2px 0px rgba(65, 65, 65, 0.5);
   }
 
@@ -294,8 +293,8 @@
     top: 390px;
     padding-right: auto;
     background-color: #ffffff;
-    height: 60px;
-    width: 60px;
+    height: 100px;
+    width: 100px;
     box-shadow: 0px 1px 2px 0px rgba(65, 65, 65, 0.5);
   }
 
@@ -314,9 +313,22 @@
   }
 
   .slider__title {
-    max-width: 700px;
+    max-width: 800px;
     width: 100%;
-    font-size: 130%;
+    font-size: 150%;
+  }
+
+  .slider__date {
+    font-size: 150%;
+  }
+
+  .slider__author-name {
+     font-size: 150%;
+  }
+
+  .slider__author-profession {
+      font-size: 110%;
+
   }
 /* end: Слайдер со свежими новостями */
 
@@ -351,6 +363,29 @@
   margin-left: auto;
   margin-right: auto; 
   margin-bottom: 0px;
+  height: 250px;
+}
+
+.news-top-left__date, /* Блоки новостей главной страницы сайта ... */
+.news-top-center__date,
+.news-top-right__date,
+.news-bottom-left__date,
+.news-bottom-center__date,
+.news-bottom-right__date, /* ... Блоки новостей главной страницы сайта */
+.publication-left__date, /* Блоки публикаций страниц с разделами сайта... */
+.publication-center__date,
+.publication-right__date,
+.news-top-left__author, /* Блоки новостей главной страницы сайта ... */
+.news-top-center__author,
+.news-top-right__author,
+.news-bottom-left__author,
+.news-bottom-center__author,
+.news-bottom-right__author, /* ... Блоки новостей главной страницы сайта */
+.publication-left__author, /* Блоки публикаций страниц с разделами сайта... */
+.publication-center__author,
+.publication-right__author
+ {
+  font-size: 150%;
 }
 
 .news-top-left__title, /* Блоки новостей главной страницы сайта ... */
@@ -363,7 +398,8 @@
 .publication-center__title,
 .publication-right__title /* ...Блоки публикаций страниц с разделами сайта */
 { 
-  font-size: 120%;
+  font-size: 150%;
+  line-height: 1.2;
 }
 
 .news-top-left__icon, /* Блоки новостей главной страницы сайта ... */
@@ -420,12 +456,20 @@
     margin-top: 0px;
   }
 
+  .publication p,
+  .publication a,
+  .footer__publication p,
+  .footer__publication a {
+     font-size: 16px;
+  }
+
   .header__publication__author-name {
     text-align: left;
   }
 
   .publication-author-profession {
     padding-top: 20px;
+    text-align: left;
   }
 
   .main-publication h1 {
@@ -443,6 +487,11 @@
   .photo-author img {
     width: 100%;
     height: 100%;
+  }
+
+  .comparison-table p, 
+  .comparison-table a {
+    font-size: 16px;
   }
 /* end: Публикации */
 
